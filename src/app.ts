@@ -23,7 +23,7 @@ app.use(express.json());
 app.get('/', (req, res) => res.send('AppNow API Running'));
 
 // Health check
-app.get('/health', (req, res) => {
+app.get('*/health', (req, res) => {
     res.status(200).json({ status: 'ok' });
 });
 
