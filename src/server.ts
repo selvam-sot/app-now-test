@@ -11,7 +11,7 @@ process.on('unhandledRejection', (error) => {
     process.exit(1);
 });
 
-const PORT = Number(process.env.PORT) || 8080;
+const PORT = Number(process.env.PORT) || 3000;
 
 try {
     app.listen(PORT, '0.0.0.0', () => {
